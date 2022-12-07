@@ -1,0 +1,1031 @@
+@charset "utf-8";
+
+#wrap{
+    width: 100%;
+}
+.container{
+    height: 100vh;
+}
+
+/* =====배너===== */
+.banner{
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+}
+
+/* 스와이퍼 */
+.banner .slider-wrap{
+    width: 100%;
+    height: 100%;
+}
+.banner .slider-wrap .auto-slider{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.banner .slider-wrap .auto-slider .slider{
+    width: 25%;
+    height: 100%;
+}
+.banner .slider-wrap .auto-slider .slider.slider-1{
+    background: url(../img/banner_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.banner .slider-wrap .auto-slider .slider.slider-2{
+    background: url(../img/banner_bg_2.jpg) no-repeat center;
+    background-size: cover;
+}
+.banner .slider-wrap .auto-slider .slider.slider-3{
+    background: url(../img/banner_bg_3.jpg) no-repeat center;
+    background-size: cover;
+}
+.banner .slider-wrap .auto-slider .slider.slider-4{
+    background: url(../img/banner_bg_4.webp) no-repeat center;
+    background-size: cover;
+}
+.swiper-button-next,.swiper-button-prev{
+    opacity: 0;
+}
+/* ===== */
+
+.banner .header-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+/* 햄버거 버튼 */
+.banner .header-area .hamburger{
+    position: relative;
+    width: 40px;
+    height: 24px;
+    margin-left: 160px;
+    margin-top: 20px;
+
+    z-index: 9999;
+}
+.banner .header-area .hamburger span{
+    position: absolute;
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+
+    transition: 0.3s;
+}
+.banner .header-area .hamburger span.active{
+    background-color: #2D0003;
+}
+.banner .header-area .hamburger span:nth-child(1){
+    top: 0;
+}
+.banner .header-area .hamburger span:nth-child(2){
+    top: 50%;
+}
+.banner .header-area .hamburger span:nth-child(3){
+    top: 100%;
+}
+
+
+/* 로고 */
+.banner .header-area .header-logo{
+    width: 80px;
+    height: 80px;
+
+    z-index: 9999;
+}
+.banner .header-area .header-logo svg{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* 아이콘 */
+.banner .header-area .icon-box{
+    width: 175px;
+    height: 40px;
+    display: flex;
+    margin-top: 20px;
+    box-sizing: border-box;
+
+    z-index: 9999;
+}
+.banner .header-area .icon-box .icon{
+    width: 40px;
+    height: 40px;
+}
+.banner .header-area .icon-box .icon svg{
+    stroke: #fff;
+    /* 아이콘 굵기 어떻게 조절하는지 물어보기 */
+        /* stroke-width: ; */
+
+    transition: 0.3s;
+}
+.banner .header-area .icon-box .icon svg.active{
+    stroke: #2D0003;
+}
+
+/* 서브메뉴 */
+.banner .container .sub-menu{
+    width: 100%;
+    height: 540px;
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    opacity: 0;
+
+    /* transition: 0.3s; */
+}
+.banner .container .sub-menu.active{
+    /* display: block; */
+    opacity: 1;
+}
+.banner .container .sub-menu-box{
+    position: absolute;
+    width: 100%;
+    height: 540px;
+    background-color: #fff;
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .container .sub-menu-box .sub-menu-head{
+    width: 228px;
+    height: 238px;
+    /* background-color: lightblue; */
+
+
+}
+.banner .container .sub-menu-box .sub-menu-head li{
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+    /* cursor: pointer; */
+}
+
+/* 배너 텍스트 */
+.banner .banner-txt{
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+}
+.banner .banner-txt p{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 12px;
+}
+.banner .banner-txt p.txt{
+    position: absolute;
+    bottom: 67px;
+
+}
+
+/* ===sec-1 영역=== */
+.sec-1{
+    width: 100%;
+    height: 100vh;
+}
+.sec-1 .container{
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    display: flex;
+}
+.sec-1 .container .con{
+    width: 520px;
+    height: 670px;
+}
+.sec-1 .container .con .con-txt{
+    font-family: "Bigilla";
+    font-size: 50px;
+}
+.sec-1 .container .con .con-img{
+    width: 520px;
+    height: 608px;
+    margin-top: 12px;
+}
+.sec-1 .container .con .con-img img{
+    width: 520px;
+    height: 608px;
+}
+.sec-1 .container .con.con1{
+    position: absolute;
+    top: 230px;
+}
+.sec-1 .container .con.con2{
+    width: 409px;
+    height: 389px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sec-1 .container .con.con2 img{
+    width: 409px;
+    height: 389px;
+    object-fit: cover;
+
+}
+.sec-1 .container .con.con3{
+    position: absolute;
+    bottom: 230px;
+    right: 0;
+}
+
+/* ===sec-2 영역=== */
+.sec-2{
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+}
+.sec-2 .container{
+    width: 100%;
+    height: 100vh;
+
+    /* display: flex; */
+    position: absolute;
+    top: 45px;
+}
+.sec-2 .container .con{
+    width: 100%;
+    height: 420px;
+
+    display: flex;
+    position: relative;
+}
+.sec-2 .container .con.con1 .con-img{
+    width: 885px;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+}
+.sec-2 .container .con.con1 .con-img img{
+    object-position: top;
+}
+.sec-2 .container .con.con1 .con-txt{
+    width: 915px;
+    /* height: 420px; */
+
+    position: absolute;
+    right: 0;
+}
+.sec-2 .container .con.con2 .con-img{
+    width: 885px;
+    height: 100%;
+
+    position: absolute;
+    right: 0;
+}
+.sec-2 .container .con.con2 .con-txt{
+    width: 915px;
+    /* height: 420px; */
+    position: absolute;
+    left: 0;
+}
+.sec-2 .container .con.con2 .con-txt p{
+    position: absolute;
+    right: 0;
+}
+.sec-2 .container .con .con-txt p{
+    font-size: 90px;
+    font-weight: 550;
+    color: #2D0003;
+}
+.sec-2 .container .con .con-txt span{
+    width: 915px;
+    height: 8px;
+    background-color: #EDE6D6;
+    display: inline-block;
+
+    position: absolute;
+    top: 98px;
+}
+
+/* ===sec-3 영역=== */
+.sec-3{
+    width: 100%;
+    height: 100vh;
+}
+.sec-3 .container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* 애니메이션 슬라이드 */
+.sec-3 .container .animate-slider-wrap{
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    position: relative;
+}
+.sec-3 .container .animate-slider{
+    width: 2210px;
+    animation: slider 20s linear infinite;
+}
+@keyframes slider{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.sec-3 .container .img-box{
+    width: 2210px;
+    /* height: 618px; */
+
+    display: flex;
+
+    /* position: absolute;
+    top: 100px; */
+
+    align-items: center;
+    padding-bottom: 100px;
+}
+.sec-3 .container .img-box.box2{
+    position: absolute;
+    left: 2310px;
+}
+.sec-3 .container .img-box .img{
+    width: 385px;
+    height: 478px;
+
+    border-radius: 200px 200px 0 0;
+}
+.sec-3 .container .img-box .img:nth-child(even){
+    margin-bottom: 80px;
+}
+.sec-3 .container .img-box .img:nth-child(3n){
+    margin-bottom: 140px;
+}
+.sec-3 .container .img-box .img img{
+    width: 385px;
+    height: 478px;
+
+    border-radius: 200px 200px 0 0;
+
+    object-position: top;
+}
+
+.sec-3 .container .txt{
+    font-family: "Bigilla";
+    color: #2D0003;
+    font-weight: 800;
+    font-size: 80px;
+    position: absolute;
+    bottom: 136px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+}
+
+/* ===sec-4 영역=== */
+.sec-4{
+    width: 100%;
+    height: 100vh;
+}
+.sec-4 .container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.sec-4 .container .img-box{
+    width: 1200px;
+    height: 900px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sec-4 .container .img-box .img-con{
+    width: 1200px;
+    height: 300px;
+    display: flex;
+
+    justify-content: center;
+}
+
+/* 이미지 삽입 */
+.sec-4 .container .img-box .img-con .img.box1{
+    background: url(../img/sec-4_1.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box1:hover{
+    background: url(../img/sec-4_1-1.png) no-repeat center;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box2{
+    background: url(../img/sec-4_2.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box2:hover{
+    background: url(../img/sec-4_2-2.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box3{
+    background: url(../img/sec-4_3.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box3:hover{
+    background: url(../img/sec-4_3-3.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box4{
+    background: url(../img/sec-4_4.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box4:hover{
+    background: url(../img/sec-4_4-4.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box5{
+    background: url(../img/sec-4_5.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box5:hover{
+    background: url(../img/sec-4_5-5.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box6{
+    background: url(../img/sec-4_6.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box6:hover{
+    background: url(../img/sec-4_6-6.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box7{
+    background: url(../img/sec-4_7.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box7:hover{
+    background: url(../img/sec-4_7-7.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box8{
+    background: url(../img/sec-4_8.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box8:hover{
+    background: url(../img/sec-4_8-8.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box9{
+    background: url(../img/sec-4_9.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box9:hover{
+    background: url(../img/sec-4_9-9.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box10{
+    background: url(../img/sec-4_10.png) no-repeat;
+    background-size: cover;
+}
+.sec-4 .container .img-box .img-con .img.box10:hover{
+    background: url(../img/sec-4_10-10.png) no-repeat;
+    background-size: cover;
+}
+
+.sec-4 .container .img-box .img{
+    width: 300px;
+    height: 300px;
+
+    cursor: pointer;
+}
+.sec-4 .container .img-box .img img{
+    width: 300px;
+    height: 300px;
+
+    object-position: top;
+}
+
+/* sec-5 영역 */
+.sec-5{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #FBF8F1;
+
+    /* position: relative; */
+
+}
+.sec-5 .container{
+    /* width: 2045px;
+    height: 616px;
+
+    position: absolute; */
+    padding-top: 227px;
+}
+.sec-5 .container .main{
+    font-size: 48px;
+    color: #2D0003;
+    font-weight: 800;
+
+    /* margin-top: 227px; */
+    text-align: center;
+}
+.sec-5 .container .news{
+    display: flex;
+}
+.sec-5 .container .news .con{
+    width: 655px;
+    /* height: 469px; */
+    /* 텍스트와 이미지가 같이 묶여있는 박스에는 높이값 주는 거 아님 */
+
+    margin-top: 60px;
+    margin-right: 20px;
+}
+.sec-5 .container .news .con.con1{
+    margin-left: 20px;
+}
+.sec-5 .container .news .con p{
+    font-size: 22px;
+    margin-top: 20px;
+    color: #2D2D2D;
+}
+.sec-5 .container .news .con img{
+    width: 600px;
+    height: 390px;
+    border-radius: 20px;
+}
+
+/* ===footer 영역=== */
+.footer{
+    width: 100%;
+    height: 737px;
+
+    position: relative;
+}
+.footer .container{
+    width: 100%;
+    height: 100%;
+    background-color: #FBF8F1;
+
+    display: flex;
+    justify-content: center;
+}
+.footer .container .menu{
+    width: 385px;
+    height: 356px;
+
+    /* background-color: lightblue; */
+
+    margin-right: 20px;
+    margin-top: 137px;
+}
+.footer .container .menu .con{
+    margin-top: 20px;
+    text-align: center;
+
+    color: #5e5e5e;
+    font-weight: 600;
+}
+.footer .container .b-logo{
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* ====반응형==== */
+@media (max-width:1470px){
+    .sec-1 .container .con.con3{
+        display: none;
+    }
+    .sec-1 .container .con.con2{
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /* right: 10px; */
+    }
+    .sec-1 .container{
+        height: auto;
+        padding: 150px 0;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sec-1 .container .con.con1{
+        position: static;
+        transform: none;
+    }
+    .sec-1 .container .con.con2{
+        position: static;
+        transform: none;
+    }    
+}
+@media (max-width:1200px){
+    /* sec-1번에 로고 a 태그가 오른쪽으로 안 가는 이유 물어보기 */
+html,body{
+    font-size: 90%;
+}
+.sec-2{
+    position: static;
+}
+.sec-2 .container{
+    position: static;
+    height: auto;
+}
+.sec-2 .container .con{
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+.sec-2 .container .con.con1 .con-img{
+    position: static;
+    height: 370px;
+}
+.sec-2 .container .con.con1 .con-img img{
+    width: 780px;
+    height: 370px;
+}
+.sec-2 .container .con.con1 .con-txt{
+position: static;
+margin-left: 7px;
+}
+.sec-2 .container .con.con2 .con-img{
+    width: 780px;
+    height: 370px;
+    position: static;
+}
+.sec-2 .container .con.con2 .con-img img{
+    width: 780px;
+    height: 370px;
+}
+.sec-2 .container .con.con2 .con-txt{
+    width: 390px;
+    position: static;
+}
+.sec-2 .container .con.con2 .con-txt p{
+    position: static;
+    right: 0;
+
+    margin-left: 7px;
+}
+.sec-2 .container .con .con-txt p{
+    font-size: 60px;
+    position: static;
+}
+.sec-2 .container .con .con-txt span{
+    position: static;
+    width: 390px;
+}
+
+.sec-4 .container{
+    width: 98.5%;
+}
+.sec-5 .container .news .con.con3{
+    display: none;
+}
+.sec-5 .container .news .con.con1{
+    margin-left: 10px;
+}
+.sec-5 .container .news .con img{
+    width: 570px;
+}
+.sec-5 .container .news .con p{
+    font-size: 21px;
+}
+.footer .container .menu .con{
+    font-size: 15px;
+}
+}
+
+@media (max-width:960px){
+    /* 백그라운드로 설정한 건 왜 width 값 적용이 안 되는지 물어보기 */
+    .banner .header-area .hamburger{
+        margin-left: 100px;
+    }
+    .banner .header-area .header-logo{
+        width: 70px;
+        height: 70px;
+    }
+    .banner .header-area .header-logo svg{
+        width: 70px;
+        height: 70px;
+    }
+    .sec-1 .container .con.con2{
+        width: 369px;
+        height: 351px;
+    }
+    .sec-1 .container .con.con2 img{
+        width: 369px;
+        height: 351px;
+    }
+
+    .sec-2{
+        height: auto;
+    }
+    .sec-2 .container .con{
+        position: static;
+        display: block;
+
+        height: auto;
+    }
+    .sec-2 .container .con.con1 .con-img{
+        width: 780px;
+    }
+    .sec-2 .container .con.con1 .con-img img{
+        width: 780px;
+    }
+    .sec-2 .container .con.con1 .con-txt{
+        display: block;
+    }
+    .sec-2 .container .con.con2 .con-img{
+        width: 780px;
+    }
+    .sec-2 .container .con.con2 .con-img img{
+        width: 780px;
+    }
+
+
+    .sec-3 .container .txt{
+        bottom: 60px;
+        font-size: 70px;
+    }
+    .sec-4 .container .img-box .img-con .img.box7{
+        display: none;
+        /* 어떻게 배치해야할지 모르겠어서 7번 박스 냅다 지웠는데 괜찮은건지 물어보기 */
+    }
+    .sec-5 .container .news .con.con2{
+        display: none;
+    }
+    .sec-5 .container .news .con img{
+        width: 765px;
+        height: 472px;
+    }
+    .sec-5 .container .news .con p{
+        font-size: 30px;
+    }
+    .sec-5 .container .news .con.con1{
+        width: 765px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width:760px){
+    .banner .header-area .header-logo{
+        width: 60px;
+        height: 60px;
+    }
+    .banner .header-area .header-logo svg{
+        width: 60px;
+        height: 60px;
+    }
+    .banner .banner-txt p.txt{
+        display: none;
+    }
+    .banner .banner-txt p{
+        padding: 15px;
+        line-height: 30px;
+        bottom: 50px;
+    }
+    .sec-2 .container .con.con1 .con-txt span{
+        margin-left: 0;
+    }
+    .sec-2 .container .con .con-txt span{
+        margin-left: 7px;
+    }
+
+    /* sec-1 로고.... */
+    .sec-3 .container .animate-slider-wrap{
+        margin-top: 30px;
+    }
+    .sec-3 .container .txt{
+        font-size: 60px;
+        bottom: 90px;
+    }
+
+    .sec-4 .container .img-box .img-con .img.box3,
+    .sec-4 .container .img-box .img-con .img.box6,
+    .sec-4 .container .img-box .img-con .img.box10{
+        display: none;
+    }
+    .sec-4 .container .img-box .img-con .img.box2,
+    .sec-4 .container .img-box .img-con .img.box5,
+    .sec-4 .container .img-box .img-con .img.box9{
+        margin-left: 5px;
+    }
+    .sec-5 .container .news .con img{
+        width: 720px;
+        height: 402px;
+    }
+    .sec-5 .container .news .con.con1{
+        width: 720px;
+        position: static;
+        transform: none;
+    }
+    .sec-5 .container .news .con p{
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .footer .container .menu .con{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:560px){
+    .banner .header-area .hamburger{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        margin-left: 16px;
+    }
+    .banner .header-area .header-logo{
+        width: 40px;
+        height: 40px;
+        margin-top: 14px;
+        margin-left: 65px;
+    }
+    .banner .header-area .header-logo svg{
+        width: 40px;
+        height: 40px;
+    }
+
+    .banner .header-area .icon-box{
+        width: 100px;
+        height: 30px;
+    }
+    .banner .header-area .icon-box .icon{
+        width: 30px;
+        height: 30px;
+    }
+    .banner .header-area .icon-box .icon svg{
+        width: 30px;
+        height: 30px;
+    }
+    .banner .banner-txt p{
+        padding: 15px;
+        line-height: 30px;
+    }
+    .banner .container .sub-menu-box{
+        display: block;
+        height: 700px;
+    }
+    .banner .container .sub-menu-box .sub-menu-head{
+        margin: 0 auto;
+        height: 48px;
+        padding-top: 88px;
+    }
+    .banner .container .sub-menu-box .sub-menu-body{
+        display: none;
+    }
+    .sec-1{
+        height: auto;
+    }
+    .sec-1 .container{
+        display: block;
+        z-index: 0;
+        /* height: 0; */
+        padding: 100px 16px;
+        position: static;
+    }
+    .sec-1 .container .con.con1{
+        width: 100%;
+        height: auto;
+    }
+    .sec-1 .container .con .con-txt{
+        font-size: 35px;
+    }
+    .sec-1 .container .con .con-img{
+        width: 100%;
+        height: 568px;
+    }
+    .sec-1 .container .con .con-img img{
+        width: 100%;
+        height: 568px;
+    }
+
+    .sec-1 .container .con.con2{
+        width: 249px;
+        height: 241px;
+        margin: 85px auto 0;
+    }
+    .sec-1 .container .con.con2 img{
+        width: 249px;
+        height: 241px;
+    }
+
+    .sec-2 .container .con{
+        width: auto;
+        padding: 0 20px;
+    }
+    .sec-2 .container .con.con1 .con-txt span{
+        margin-left: 0;
+    }
+    .sec-2 .container .con .con-txt span{
+        margin-left: 7px;
+    }
+    .sec-2 .container .con.con1 .con-img{
+        width: 340px;
+        height: 170px;
+    }
+    .sec-2 .container .con.con1 .con-img img{
+        width: 340px;
+        height: 170px;
+    }
+    .sec-2 .container .con.con2 .con-img{
+        width: 340px;
+        height: 170px;
+    }
+    .sec-2 .container .con.con2 .con-img img{
+        width: 340px;
+        height: 170px;
+    }
+    .sec-2 .container .con.con1 .con-txt{
+        width: 430px;
+        margin: 0 auto;
+    }
+    .sec-2 .container .con .con-txt p{
+        font-size: 42px;
+    }
+    .sec-2 .container .con.con1 .con-txt span{
+        width: 340px;
+    }
+    .sec-2 .container .con.con2 .con-txt{
+        width: 430px;
+        margin: 0 auto;
+    }
+    .sec-2 .container .con.con2 .con-txt span{
+        width: 340px;
+        margin-left: 0;
+    }
+    .sec-2 .container .con.con2 .con-txt p{
+        margin-left: 0;
+    }
+
+
+    .sec-3 .container .txt{
+        font-size: 50px;
+        bottom: 0px;
+    }
+    .sec-3 .container .animate-slider-wrap{
+        margin: 0;
+    }
+    .sec-3 .container .img-box{
+        padding: 0;
+    }
+
+    .sec-4 .container .img-box{
+        height: 730px;
+    }
+    .sec-4 .container .img-box .img-con{
+        height: 220px;
+    }
+    .sec-4 .container .img-box .img{
+        width: 180px;
+        height: 180px;
+    }
+    .sec-5 .container{
+        padding-top: 50px;
+        height: auto;
+    }
+    .sec-5 .container .main{
+        font-size: 32px;
+    }
+    .sec-5 .container .news .con.con1{
+        width: 460px;
+        height: 312px;
+        margin: 0;
+        padding: 60px 13px;
+    }
+    .sec-5 .container .news .con img{
+        width: 350px;
+        height: 202px;
+    }
+    .sec-5 .container .news .con p{
+        font-size: 18px;
+    }
+    
+
+    .footer .container .menu.menu-1,
+    .footer .container .menu.menu-4{
+        display: none;
+    }
+}
