@@ -37,11 +37,11 @@
     background-size: cover;
 }
 .banner .slider-3{
-    background: url(../img/banner_bg_3.jpg) no-repeat center;
+    background: url(../img/banner_bg_3.jpg) no-repeat center -640px;
     background-size: cover;
 }
 .banner .slider-4{
-    background: url(../img/banner_bg_4.webp) no-repeat center;
+    background: url(../img/banner_bg_4.webp) no-repeat center -20px;
     background-size: cover;
 }
 .banner .swiper-button-next,
